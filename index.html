@@ -233,6 +233,17 @@
   .banner.success{background:var(--success-bg);color:var(--success-ink);}
   .banner.error{background:var(--error-bg);color:var(--error-ink);}
 
+  .banner.success .success-title{font-size:1.08rem;font-weight:700;margin:0 0 12px;color:var(--success-ink);}
+  .banner.success p{margin:0 0 12px;line-height:1.6;color:var(--ink-soft);}
+  .banner.success p:last-of-type{margin-bottom:0;}
+  .banner-cta{
+    display:inline-flex;align-items:center;gap:8px;
+    margin:2px 0 14px;padding:11px 20px;border-radius:8px;
+    background:var(--accent);color:var(--accent-ink) !important;
+    font-weight:600;font-size:.92rem;text-decoration:none;
+  }
+  .banner-cta:hover{background:var(--accent-hover);}
+
   footer{
     margin-top:36px;text-align:center;
     font-size:.85rem;color:var(--ink-faint);
@@ -321,7 +332,7 @@
            reçoit. Ce champ est synchronisé par JS avec l'e-mail saisi juste avant
            l'envoi (voir script en bas de page). -->
       <input type="hidden" name="_replyto" id="fReplyto" value="">
-      <input type="hidden" name="_autoresponse" value="Bonjour,  Nous avons bien reçu votre candidature pour rejoindre Frontguys — merci pour votre confiance !  Notre équipe recrutement va l'étudier avec attention et revient vers vous très prochainement. Si ce n'est pas déjà fait, n'hésitez pas à réserver votre créneau d'entretien directement depuis la page de candidature.  En attendant, voici un aperçu de quelques infos et tips sur Frontguys : https://www.figma.com/proto/fNYcCbnkvpSzu5cUUzWwXe/Tips-%26-Infos---Frontguys?type=design&node-id=11-225&t=4zE2RuBMLd6WXzwh-1&scaling=min-zoom&page-id=0%3A1&mode=design  À très vite, L'équipe Frontguys !">
+      <input type="hidden" name="_autoresponse" value="Bonjour, nous avons bien reçu votre candidature pour rejoindre Frontguys — merci pour votre confiance ! Notre équipe recrutement va l'étudier avec attention et revient vers vous très prochainement. Si ce n'est pas déjà fait, n'hésitez pas à réserver votre créneau d'entretien directement depuis la page de candidature. En attendant, voici un aperçu de quelques infos et tips sur Frontguys : https://www.figma.com/proto/fNYcCbnkvpSzu5cUUzWwXe/Tips-%26-Infos---Frontguys?type=design&node-id=11-225&t=4zE2RuBMLd6WXzwh-1&scaling=min-zoom&page-id=0%3A1&mode=design — à très vite, l'équipe Frontguys !">
 
       <div class="field-row">
         <div>
@@ -372,7 +383,12 @@
     </form>
 
     <div class="banner success" id="successBanner">
-      Merci ! Votre candidature a bien été envoyée à l'équipe Frontguys. On revient vers vous très vite — pensez aussi à réserver votre créneau d'entretien ci-dessus si ce n'est pas déjà fait.
+      <p class="success-title">Merci, votre candidature est bien partie&nbsp;!</p>
+      <p>Nous avons bien reçu votre candidature pour rejoindre Frontguys — merci pour votre confiance.</p>
+      <p>Notre équipe recrutement va l'étudier avec attention et revient vers vous très prochainement. Si ce n'est pas déjà fait, pensez à réserver votre créneau d'entretien ci-dessus.</p>
+      <p>En attendant, voici un aperçu de quelques infos et tips sur Frontguys&nbsp;:</p>
+      <a class="banner-cta" href="https://www.figma.com/proto/fNYcCbnkvpSzu5cUUzWwXe/Tips-%26-Infos---Frontguys?type=design&node-id=11-225&t=4zE2RuBMLd6WXzwh-1&scaling=min-zoom&page-id=0%3A1&mode=design" target="_blank" rel="noopener">Voir les infos &amp; tips Frontguys</a>
+      <p>À très vite,<br>L'équipe Frontguys</p>
     </div>
   </section>
 
